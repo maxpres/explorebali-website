@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Licorice&family=Lobster&family=Nunito:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="src/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="src/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="src/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="src/scss/style.css" />
+
+    <title>Explore Bali</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="nav">
+        <ul class="ulhide" id="ullist">
+          <li class="about"><a class="navlink" href="#about">about</a></li>
+          <li class="beaches">
+            <a class="navlink" href="#beaches">beaches</a>
+          </li>
+          <li class="info"><a class="navlink" href="#info">info</a></li>
+        </ul>
+
+        <div class="burger" id="burgerid">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="facebook fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="twitter fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="instagram fab fa-instagram"></i
+          ></a>
+        </div>
+      </nav>
+
+      <h2 class="main-title">
+        <svg
+          width="50vw"
+          height="20vh"
+          id="logo"
+          viewBox="0 0 327 91"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.6862 10.647V31.85H32.9312V38.675H8.6862V60.515H35.7948V67.34H0V3.822H35.7948V10.647H8.6862Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M76.2376 67.34L63.8288 48.776L51.8972 67.34H42.8292L59.7243 42.588L42.8292 17.472H52.6608L65.0696 35.945L76.9058 17.472H85.9738L69.1741 42.133L86.0692 67.34H76.2376Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M103.3 26.663C105.018 23.8117 107.563 21.4457 110.936 19.565C114.372 17.6237 118.35 16.653 122.868 16.653C127.513 16.653 131.713 17.7147 135.467 19.838C139.286 21.9613 142.276 24.9643 144.44 28.847C146.604 32.669 147.685 37.128 147.685 42.224C147.685 47.2593 146.604 51.7487 144.44 55.692C142.276 59.6353 139.286 62.699 135.467 64.883C131.713 67.067 127.513 68.159 122.868 68.159C118.413 68.159 114.468 67.2187 111.032 65.338C107.659 63.3967 105.082 61.0003 103.3 58.149V91H94.6137V17.472H103.3V26.663ZM138.808 42.224C138.808 38.4627 138.013 35.1867 136.422 32.396C134.831 29.6053 132.668 27.482 129.931 26.026C127.259 24.57 124.3 23.842 121.054 23.842C117.872 23.842 114.913 24.6003 112.177 26.117C109.504 27.573 107.341 29.7267 105.686 32.578C104.095 35.3687 103.3 38.6143 103.3 42.315C103.3 46.0763 104.095 49.3827 105.686 52.234C107.341 55.0247 109.504 57.1783 112.177 58.695C114.913 60.151 117.872 60.879 121.054 60.879C124.3 60.879 127.259 60.151 129.931 58.695C132.668 57.1783 134.831 55.0247 136.422 52.234C138.013 49.3827 138.808 46.046 138.808 42.224Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M167.805 0V67.34H159.119V0H167.805Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M205.422 68.159C200.522 68.159 196.068 67.0973 192.059 64.974C188.114 62.8507 184.996 59.8477 182.705 55.965C180.477 52.0217 179.364 47.4717 179.364 42.315C179.364 37.219 180.509 32.7297 182.8 28.847C185.155 24.9037 188.336 21.9007 192.345 19.838C196.354 17.7147 200.841 16.653 205.804 16.653C210.768 16.653 215.254 17.7147 219.263 19.838C223.272 21.9007 226.422 24.8733 228.713 28.756C231.067 32.6387 232.245 37.1583 232.245 42.315C232.245 47.4717 231.036 52.0217 228.617 55.965C226.263 59.8477 223.049 62.8507 218.977 64.974C214.904 67.0973 210.386 68.159 205.422 68.159ZM205.422 60.879C208.54 60.879 211.468 60.1813 214.204 58.786C216.94 57.3907 219.136 55.2977 220.79 52.507C222.508 49.7163 223.367 46.319 223.367 42.315C223.367 38.311 222.54 34.9137 220.886 32.123C219.231 29.3323 217.068 27.2697 214.395 25.935C211.722 24.5397 208.827 23.842 205.709 23.842C202.527 23.842 199.6 24.5397 196.927 25.935C194.318 27.2697 192.218 29.3323 190.627 32.123C189.036 34.9137 188.241 38.311 188.241 42.315C188.241 46.3797 189.005 49.8073 190.532 52.598C192.123 55.3887 194.223 57.4817 196.832 58.877C199.441 60.2117 202.304 60.879 205.422 60.879Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M252.352 25.571C253.879 22.7197 256.042 20.5053 258.842 18.928C261.706 17.3507 265.174 16.562 269.247 16.562V25.116H266.956C257.22 25.116 252.352 30.1513 252.352 40.222V67.34H243.665V17.472H252.352V25.571Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M327 40.495C327 42.0723 326.905 43.7407 326.714 45.5H284.905C285.224 50.414 286.974 54.2663 290.155 57.057C293.401 59.787 297.314 61.152 301.896 61.152C305.65 61.152 308.769 60.333 311.25 58.695C313.796 56.9963 315.578 54.7517 316.596 51.961H325.95C324.55 56.7537 321.75 60.6667 317.55 63.7C313.35 66.6727 308.132 68.159 301.896 68.159C296.932 68.159 292.478 67.0973 288.533 64.974C284.651 62.8507 281.596 59.8477 279.369 55.965C277.142 52.0217 276.028 47.4717 276.028 42.315C276.028 37.1583 277.11 32.6387 279.274 28.756C281.437 24.8733 284.46 21.9007 288.342 19.838C292.287 17.7147 296.805 16.653 301.896 16.653C306.86 16.653 311.25 17.6843 315.068 19.747C318.887 21.8097 321.814 24.661 323.85 28.301C325.95 31.8803 327 35.945 327 40.495ZM318.027 38.766C318.027 35.6113 317.296 32.9117 315.832 30.667C314.368 28.3617 312.364 26.6327 309.819 25.48C307.337 24.2667 304.569 23.66 301.514 23.66C297.123 23.66 293.369 24.9947 290.251 27.664C287.196 30.3333 285.446 34.034 285.001 38.766H318.027Z"
+            stroke="white"
+            stroke-width="3"
+          />
+        </svg>
+      </h2>
+      <br />
+      <div class="second-title">
+        <svg
+          width="50vw"
+          height="20vh"
+          id="logo2"
+          viewBox="0 0 83 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.064 15.592C5.96 14.024 7.272 12.744 9 11.752C10.728 10.76 12.696 10.264 14.904 10.264C17.272 10.264 19.4 10.824 21.288 11.944C23.176 13.064 24.664 14.648 25.752 16.696C26.84 18.712 27.384 21.064 27.384 23.752C27.384 26.408 26.84 28.776 25.752 30.856C24.664 32.936 23.16 34.552 21.24 35.704C19.352 36.856 17.24 37.432 14.904 37.432C12.632 37.432 10.632 36.936 8.904 35.944C7.208 34.952 5.928 33.688 5.064 32.152V37H0.695999V1.48H5.064V15.592ZM22.92 23.752C22.92 21.768 22.52 20.04 21.72 18.568C20.92 17.096 19.832 15.976 18.456 15.208C17.112 14.44 15.624 14.056 13.992 14.056C12.392 14.056 10.904 14.456 9.528 15.256C8.184 16.024 7.096 17.16 6.264 18.664C5.464 20.136 5.064 21.848 5.064 23.8C5.064 25.784 5.464 27.528 6.264 29.032C7.096 30.504 8.184 31.64 9.528 32.44C10.904 33.208 12.392 33.592 13.992 33.592C15.624 33.592 17.112 33.208 18.456 32.44C19.832 31.64 20.92 30.504 21.72 29.032C22.52 27.528 22.92 25.768 22.92 23.752Z"
+            stroke="white"
+            stroke-width="1"
+          />
+          <path
+            d="M31.5015 23.752C31.5015 21.064 32.0455 18.712 33.1335 16.696C34.2215 14.648 35.7095 13.064 37.5975 11.944C39.5175 10.824 41.6455 10.264 43.9815 10.264C46.2855 10.264 48.2855 10.76 49.9815 11.752C51.6775 12.744 52.9415 13.992 53.7735 15.496V10.696H58.1895V37H53.7735V32.104C52.9095 33.64 51.6135 34.92 49.8855 35.944C48.1895 36.936 46.2055 37.432 43.9335 37.432C41.5975 37.432 39.4855 36.856 37.5975 35.704C35.7095 34.552 34.2215 32.936 33.1335 30.856C32.0455 28.776 31.5015 26.408 31.5015 23.752ZM53.7735 23.8C53.7735 21.816 53.3735 20.088 52.5735 18.616C51.7735 17.144 50.6855 16.024 49.3095 15.256C47.9655 14.456 46.4775 14.056 44.8455 14.056C43.2135 14.056 41.7255 14.44 40.3815 15.208C39.0375 15.976 37.9655 17.096 37.1655 18.568C36.3655 20.04 35.9655 21.768 35.9655 23.752C35.9655 25.768 36.3655 27.528 37.1655 29.032C37.9655 30.504 39.0375 31.64 40.3815 32.44C41.7255 33.208 43.2135 33.592 44.8455 33.592C46.4775 33.592 47.9655 33.208 49.3095 32.44C50.6855 31.64 51.7735 30.504 52.5735 29.032C53.3735 27.528 53.7735 25.784 53.7735 23.8Z"
+            stroke="white"
+            stroke-width="1"
+          />
+          <path
+            d="M69.939 1.48V37H65.571V1.48H69.939Z"
+            stroke="white"
+            stroke-width="1"
+          />
+          <path
+            d="M79.6395 6.424C78.8075 6.424 78.1035 6.136 77.5275 5.56C76.9515 4.984 76.6635 4.28 76.6635 3.448C76.6635 2.616 76.9515 1.912 77.5275 1.336C78.1035 0.76 78.8075 0.472 79.6395 0.472C80.4395 0.472 81.1115 0.76 81.6555 1.336C82.2315 1.912 82.5195 2.616 82.5195 3.448C82.5195 4.28 82.2315 4.984 81.6555 5.56C81.1115 6.136 80.4395 6.424 79.6395 6.424ZM81.7515 10.696V37H77.3835V10.696H81.7515Z"
+            stroke="white"
+            stroke-width="1"
+          />
+        </svg>
+      </div>
+
+      <img src="scss/img/bbbbb.jpg" class="bg" alt="" />
+
+      <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-circle-up"></i>
+      </div>
+      <div class="scrolldown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <section class="section about-section nav-section" id="about">
+      <div class="about-data">
+        <h2 class="about-title">
+          The "Island of the Gods" offers many highlights.
+        </h2>
+        <p>
+          On this page I give you an insight into what you can see and do in
+          Bali. <br />
+          From dreamlike rice terraces, centuries-old Hindu temples to
+          palm-fringed beaches. <br />
+          For the very adventurous, I recommend climbing a volcano or looking at
+          the waterfalls. <br />
+          <br />But convince yourself to visit bali by looking at some pictures.
+        </p>
+        <a href="#" class="reserve-button">Book a place</a>
+      </div>
+      <div class="about-img1">
+        <img src="scss/img/beach.jpg" alt="" />
+      </div>
+      <div class="about-img2">
+        <img src="scss/img/beach3.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="section discover-section" id="beaches">
+      <div class="discover-data">
+        <h2>
+          Discover the most <br />
+          Attractive & Adventurous Places
+        </h2>
+        <div class="box"></div>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="scss/img/slider1.jpg" alt="" />
+            <p class="description">Canggu <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider2.jpg" alt="" />
+            <p class="description">Gili Air <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider3.jpg" alt="" />
+            <p class="description">Canggu <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider4.jpg" alt="" />
+            <p class="description">Nusa Penida <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider5.jpg" alt="" />
+            <p class="description">Nusa Dua <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider6.jpg" alt="" />
+            <p class="description">Nusa Penida <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider7.jpg" alt="" />
+            <p class="description">Gili Air <br />beach</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="scss/img/slider8.jpg" alt="" />
+            <p class="description">Lombok <br />beach</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="section info-section" id="info">
+      <div class="info-data">
+        <div class="info">
+          <h2>
+            A few numbers to <br />
+            explain the urgency of a visit
+          </h2>
+        </div>
+        <div>
+          <ul class="numbers">
+            <li class="obs">
+              <div class="counter" data-target="3500000"></div>
+              <span>visitors yearly</span>
+            </li>
+            <li class="obs">
+              <div class="counter" data-target="85"></div>
+              <span>islands</span>
+            </li>
+            <li class="obs">
+              <div class="counter" data-target="20000"></div>
+              <span>temple</span>
+            </li>
+          </ul>
+        </div>
+        <div class="info-pics">
+          <div>
+            <img class="vul" src="scss/img/vul.jpg" alt="" />
+          </div>
+          <div>
+            <img class="waterfall" src="scss/img/waterfall.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="travel-container">
+          <h3>Travel</h3>
+          <ul>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="about-container">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">News & Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="company-container">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Plan & Pricing</a></li>
+            <li><a href="#">Become a member</a></li>
+          </ul>
+        </div>
+
+        <div class="about-container">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rights-container">
+        <div class="copyright">
+          <p>&#xA9; 2022 Maximilian Pres. All rights reserved.</p>
+        </div>
+        <div class="rights">
+          <p>Terms & Agreement</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"
+      integrity="sha512-kDuUo39RGApdfHkM1WQL8Pg9BYtYGS5rD14AzePsD4SEaixw7v/ykAkLMdsSjuBCNFE6/FAP+WIHh6N6QZJl5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"
+      integrity="sha512-7nSmgdAZ7oPdT5aa2a4YauI8Y1xgaj6zZtQo9+EIEhpcNEiRHPAtyTKYckBQ0lmg1xQKrdWweHBcN/D0tdnvCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+      integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
