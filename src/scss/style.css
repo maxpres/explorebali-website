@@ -255,32 +255,32 @@ nav.sticky {
   stroke-dasharray: 188px;
   stroke-dashoffset: 188px;
   stroke: #35728a;
-  -webkit-animation: line-anim 6.1s ease forwards 1s;
-          animation: line-anim 6.1s ease forwards 1s;
+  -webkit-animation: line-anim 6.1s ease forwards;
+          animation: line-anim 6.1s ease forwards;
 }
 
 #logo2 path:nth-child(2) {
   stroke-dasharray: 169px;
   stroke-dashoffset: 169px;
   stroke: #35728a;
-  -webkit-animation: line-anim 8s ease forwards 1s;
-          animation: line-anim 8s ease forwards 1s;
+  -webkit-animation: line-anim 6s ease forwards;
+          animation: line-anim 6s ease forwards;
 }
 
 #logo2 path:nth-child(3) {
   stroke-dasharray: 80px;
   stroke-dashoffset: 80px;
   stroke: #35728a;
-  -webkit-animation: line-anim 5.1s ease forwards 1s;
-          animation: line-anim 5.1s ease forwards 1s;
+  -webkit-animation: line-anim 4.1s ease forwards;
+          animation: line-anim 4.1s ease forwards;
 }
 
 #logo2 path:nth-child(4) {
   stroke-dasharray: 80px;
   stroke-dashoffset: 80px;
   stroke: #35728a;
-  -webkit-animation: line-anim 5.1s ease forwards 1s;
-          animation: line-anim 5.1s ease forwards 1s;
+  -webkit-animation: line-anim 5.1s ease forwards;
+          animation: line-anim 5.1s ease forwards;
 }
 
 .social-media {
@@ -1261,13 +1261,10 @@ footer .rights-container .rights p:nth-child(1) {
     width: 80vw;
   }
   .info-section .info-data div .numbers li {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .info-section .info-data div .numbers li .counter {
     font-size: 0.9rem;
-  }
-  .info-section .info-data .numbers li {
-    font-size: 1.2rem;
   }
   .footer {
     padding-top: 13rem;

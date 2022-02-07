@@ -26,7 +26,7 @@ TweenMax.staggerTo(
   "nav ul li",
   0.7,
   {
-    delay: 5.5,
+    delay: 4.75,
     y: 0,
     ease: Expo.easeInOut,
     opacity: 1,
@@ -38,7 +38,7 @@ TweenMax.staggerTo(
   ".social-media i",
   1,
   {
-    delay: 6.25,
+    delay: 5.75,
     opacity: 1,
     y: 30,
     ease: Expo.easeInOut,
@@ -47,7 +47,7 @@ TweenMax.staggerTo(
 );
 
 TweenMax.to(".bars", 1, {
-  delay: 5.75,
+  delay: 4.75,
   opacity: 1,
   y: 5,
   ease: Expo.easeInOut,
@@ -59,16 +59,15 @@ TweenMax.to(".scrolldown", 2, {
   y: -50,
   opacity: 1,
   margin: "auto",
-  // x: "55%",
   ease: Expo.easeInOut,
 });
 
 let tl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".second-title", //Startpunkt
+    trigger: ".second-title",
     start: "-100%",
     end: "20%",
-    scrub: 1.5, //Geschwindigkeit der Elemente
+    scrub: 1.5,
   },
 });
 
@@ -76,10 +75,10 @@ tl.fromTo(".social-media", { right: "5%" }, { right: "5%", opacity: 0 });
 
 let tl6 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".second-title", //Startpunkt
+    trigger: ".second-title",
     start: "-100%",
     end: "20%",
-    scrub: 1.5, //Geschwindigkeit der Elemente
+    scrub: 1.5,
   },
 });
 
