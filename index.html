@@ -36,7 +36,7 @@
       sizes="16x16"
       href="src/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="manifest" href="src/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
       href="src/favicon/safari-pinned-tab.svg"
@@ -51,7 +51,7 @@
     <title>Explore Bali</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container section">
       <nav id="nav">
         <ul class="ulhide" id="ullist">
           <li class="about"><a class="navlink" href="#about">about</a></li>
@@ -61,7 +61,7 @@
           <li class="info"><a class="navlink" href="#info">info</a></li>
         </ul>
 
-        <div class="burger" id="burgerid">
+        <div class="bars" id="barsid">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -159,7 +159,7 @@
         </svg>
       </div>
 
-      <img src="scss/img/bbbbb.jpg" class="bg" alt="" />
+      <img src="src/img/background.jpg" class="bg" alt="background-image" />
 
       <div class="scrollTop" onclick="scrollToTop()">
         <i class="fas fa-arrow-circle-up"></i>
@@ -185,13 +185,13 @@
           the waterfalls. <br />
           <br />But convince yourself to visit bali by looking at some pictures.
         </p>
-        <a href="#" class="reserve-button">Book a place</a>
+        <a href="#" class="book-btn">Book a place</a>
       </div>
       <div class="about-img1">
-        <img src="scss/img/beach.jpg" alt="" />
+        <img src="src/img/beach.jpg" alt="beach" />
       </div>
       <div class="about-img2">
-        <img src="scss/img/beach3.jpg" alt="" />
+        <img src="src/img/beach2.jpg" alt="beach" />
       </div>
     </section>
 
@@ -201,41 +201,40 @@
           Discover the most <br />
           Attractive & Adventurous Places
         </h2>
-        <div class="box"></div>
       </div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="scss/img/slider1.jpg" alt="" />
-            <p class="description">Canggu <br />beach</p>
+            <img src="src/img/slider1.jpg" alt="beach-picture" />
+            <p class="img-description">Canggu <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider2.jpg" alt="" />
-            <p class="description">Gili Air <br />beach</p>
+            <img src="src/img/slider2.jpg" alt="beach-picture" />
+            <p class="img-description">Gili Air <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider3.jpg" alt="" />
-            <p class="description">Canggu <br />beach</p>
+            <img src="src/img/slider3.jpg" alt="beach-picture" />
+            <p class="img-description">Canggu <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider4.jpg" alt="" />
-            <p class="description">Nusa Penida <br />beach</p>
+            <img src="src/img/slider4.jpg" alt="beach-picture" />
+            <p class="img-description">Nusa Penida <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider5.jpg" alt="" />
-            <p class="description">Nusa Dua <br />beach</p>
+            <img src="src/img/slider5.jpg" alt="beach-picture" />
+            <p class="img-description">Nusa Dua <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider6.jpg" alt="" />
-            <p class="description">Nusa Penida <br />beach</p>
+            <img src="src/img/slider6.jpg" alt="beach-picture" />
+            <p class="img-description">Nusa Penida <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider7.jpg" alt="" />
-            <p class="description">Gili Air <br />beach</p>
+            <img src="src/img/slider7.jpg" alt="beach-picture" />
+            <p class="img-description">Gili Air <br />beach</p>
           </div>
           <div class="swiper-slide">
-            <img src="scss/img/slider8.jpg" alt="" />
-            <p class="description">Lombok <br />beach</p>
+            <img src="src/img/slider8.jpg" alt="beach-picture" />
+            <p class="img-description">Lombok <br />beach</p>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -251,15 +250,15 @@
         </div>
         <div>
           <ul class="numbers">
-            <li class="obs">
+            <li>
               <div class="counter" data-target="3500000"></div>
               <span>visitors yearly</span>
             </li>
-            <li class="obs">
+            <li>
               <div class="counter" data-target="85"></div>
               <span>islands</span>
             </li>
-            <li class="obs">
+            <li>
               <div class="counter" data-target="20000"></div>
               <span>temple</span>
             </li>
@@ -267,10 +266,14 @@
         </div>
         <div class="info-pics">
           <div>
-            <img class="vul" src="scss/img/vul.jpg" alt="" />
+            <img class="vulcano" src="src/img/vulcano.jpg" alt="vulcano" />
           </div>
           <div>
-            <img class="waterfall" src="scss/img/waterfall.jpg" alt="" />
+            <img
+              class="waterfall"
+              src="src/img/waterfall.jpg"
+              alt="waterfall"
+            />
           </div>
         </div>
       </div>

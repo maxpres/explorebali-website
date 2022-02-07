@@ -46,21 +46,12 @@ TweenMax.staggerTo(
   0.27
 );
 
-TweenMax.to(".burger", 1, {
+TweenMax.to(".bars", 1, {
   delay: 5.75,
   opacity: 1,
   y: 5,
   ease: Expo.easeInOut,
 });
-
-// TweenMax.to(".seemore", 1, {
-//   delay: 7,
-//   opacity: 1,
-//   y: -20,
-//   // x: "-45%",
-//   margin: "auto",
-//   ease: Expo.easeInOut,
-// });
 
 TweenMax.to(".scrolldown", 2, {
   delay: 6,
@@ -82,17 +73,6 @@ let tl = gsap.timeline({
 });
 
 tl.fromTo(".social-media", { right: "5%" }, { right: "5%", opacity: 0 });
-
-let tl5 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".second-title", //Startpunkt
-    start: "-100%",
-    end: "20%",
-    scrub: 1.5, //Geschwindigkeit der Elemente
-  },
-});
-
-tl5.fromTo(".seemore", { bottom: "5%" }, { bottom: "5%", opacity: 0 });
 
 let tl6 = gsap.timeline({
   scrollTrigger: {
@@ -133,23 +113,23 @@ tl4.fromTo(
 
 const toggleMenu = document.querySelector(".toggleMenu");
 let icon = document.que;
-const burger = document.querySelector(".burger");
+const bars = document.querySelector(".bars");
 const navLinks = document.querySelectorAll(".ulhide li");
 const ulhide = document.querySelector(".ulhide");
 
 const navSlide = () => {
   ulhide.classList.toggle("nav-active");
-  burger.classList.toggle("toggle");
+  bars.classList.toggle("toggle");
 };
 
-burger.addEventListener("click", () => {
+bars.addEventListener("click", () => {
   navSlide();
 });
 
 document.onclick = function (e) {
-  if (e.target.id !== "burgerid" && e.target.id !== "ullist") {
+  if (e.target.id !== "barsid" && e.target.id !== "ullist") {
     ulhide.classList.remove("nav-active");
-    burger.classList.remove("toggle");
+    bars.classList.remove("toggle");
   }
 };
 
@@ -255,10 +235,10 @@ function onNavIntersection(entries) {
   // console.log(entry);
 
   if (!entry.isIntersecting) {
-    nav.classList.add("shine");
+    nav.classList.add("sticky");
     scroll.classList.add("active");
   } else {
-    nav.classList.remove("shine");
+    nav.classList.remove("sticky");
     scroll.classList.remove("active");
   }
 }
