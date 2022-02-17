@@ -83,20 +83,64 @@ nav.sticky {
   background-color: #35728a;
 }
 
-.bars {
+#barsid {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
   display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   opacity: 0;
   z-index: 10000;
 }
 
-.bars div {
+#barsid::before {
+  content: "";
+  position: absolute;
   width: 30px;
   height: 2px;
-  margin: 8px;
   background-color: #fff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  z-index: 1000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 10px 0 #fff;
+          box-shadow: 0 10px 0 #fff;
+}
+
+#barsid::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#barsid.active {
+  background-color: f7226a;
+}
+
+#barsid.active::before {
+  -webkit-transform: translateY(0px) rotate(45deg);
+          transform: translateY(0px) rotate(45deg);
+  -webkit-box-shadow: 0 0 0 #fff;
+          box-shadow: 0 0 0 #fff;
+}
+
+#barsid.active::after {
+  -webkit-transform: translateY(0px) rotate(-45deg);
+          transform: translateY(0px) rotate(-45deg);
 }
 
 .toggle .line1 {
@@ -341,14 +385,29 @@ nav.sticky {
   right: 5%;
 }
 
+.scroll {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .scrolldown {
-  position: absolute;
-  left: 48%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
   opacity: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+          transform: rotate(45deg) translate(-50%, -50%);
 }
 
 .scrolldown span {
@@ -454,7 +513,7 @@ nav.sticky {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7.4rem 4rem 4rem 4rem;
+  padding: 5.4rem 4rem 4rem 4rem;
 }
 
 .about-section .about-data {
@@ -586,8 +645,10 @@ button:hover {
     position: fixed;
     z-index: 1000;
   }
-  .bars {
-    display: block;
+  #barsid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     top: 0.3rem;
     left: 2rem;
@@ -1285,6 +1346,9 @@ footer .rights-container .rights p:nth-child(1) {
   }
   .numbers li span {
     font-size: 0.9rem;
+  }
+  .discover-section {
+    margin-top: 39rem;
   }
   .footer .footer-container div {
     width: 100vw;

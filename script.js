@@ -110,8 +110,6 @@ tl4.fromTo(
   { x: "-150", skewX: "-10deg", opacity: 0 }
 );
 
-const toggleMenu = document.querySelector(".toggleMenu");
-let icon = document.que;
 const bars = document.querySelector(".bars");
 const navLinks = document.querySelectorAll(".ulhide li");
 const ulhide = document.querySelector(".ulhide");
@@ -121,14 +119,15 @@ const navSlide = () => {
   bars.classList.toggle("toggle");
 };
 
-bars.addEventListener("click", () => {
+bars.onclick = function () {
+  bars.classList.toggle("active");
   navSlide();
-});
+};
 
 document.onclick = function (e) {
   if (e.target.id !== "barsid" && e.target.id !== "ullist") {
     ulhide.classList.remove("nav-active");
-    bars.classList.remove("toggle");
+    bars.classList.remove("active");
   }
 };
 
