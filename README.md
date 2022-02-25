@@ -1,3 +1,3 @@
 # Explore Bali Website
 
-On this page I give you an insight into what you can see and do in Bali.
+'Explore Bali' is a website that gives you an insight how beautiful the island is. The pictures might convince you to visit Bali.
