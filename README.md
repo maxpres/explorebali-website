@@ -1,3 +1,3 @@
 # Explore Bali Website
 
-'Explore Bali' is a website that gives you an insight how beautiful the island is. The pictures might convince you to visit Bali.
+On this website you can dive into the beauty of Bali. Feel free to scroll through the pictures and get an idea of the vibe that you can expect on your next trip to Bali.
