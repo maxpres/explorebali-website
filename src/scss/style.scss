@@ -1,10 +1,11 @@
-@import "config";
+@import 'config';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $font-stack;
+  overflow-x: hidden;
 }
 
 body {
@@ -86,7 +87,7 @@ nav.sticky {
 }
 
 #barsid::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 2px;
@@ -97,7 +98,7 @@ nav.sticky {
 }
 
 #barsid::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 2px;
@@ -335,7 +336,7 @@ nav.sticky {
   font-size: 25px;
 
   &:after {
-    content: "";
+    content: '';
     width: 80%;
     height: 90%;
     background-color: #fff;
@@ -510,7 +511,7 @@ button:hover {
   }
 
   i:after {
-    content: "";
+    content: '';
     width: 50%;
     height: 42%;
     background-color: #fff;
