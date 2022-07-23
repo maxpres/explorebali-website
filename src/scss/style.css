@@ -642,6 +642,30 @@ button:hover {
   right: 30px;
 }
 
+@media screen and (min-width: 1640px) {
+  .swiper-wrapper .swiper-slide {
+    width: 360px;
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  nav ul li {
+    font-size: 1.5rem;
+  }
+  .swiper-wrapper .swiper-slide {
+    width: 330px;
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .swiper-wrapper .swiper-slide {
+    width: 360px;
+    height: 420px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     -webkit-box-pack: end;
@@ -827,7 +851,7 @@ section {
 }
 
 .info-section {
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
 .info-section .info-data {
@@ -924,7 +948,7 @@ footer .footer-container {
   flex-wrap: wrap;
   -webkit-column-gap: 1rem;
   column-gap: 1rem;
-  padding: 0 5rem;
+  padding: 0 10rem;
 }
 
 footer .footer-container h3 {
